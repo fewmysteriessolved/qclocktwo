@@ -50,6 +50,7 @@ Thumbs.db
 *.orig
 *.py~
 *.pyc
+*.spec
 .coverage
 .tox/
 .mypy_cache/
