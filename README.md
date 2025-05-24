@@ -40,27 +40,84 @@ QClockTwo is a sleek, desktop word clock application built with Python and Tkint
 
 ## Build a Standalone macOS App
 
-Create a standalone executable for macOS, use PyInstaller:
+To create a standalone .app with optimized file size (~30-50MB), use PyInstaller with UPX:
 
-1. Install PyInstaller if you haven't already:
+1. Install UPX:
+
    ```bash
+   brew install upx
+   ```
+2. Install PyInstaller in the virtual environment if you haven't already:
+   ```bash
+   source qclocktwo_env/bin/activate
    pip install pyinstaller
    ```
-2. Build the app:
+3. Generate a `.spec` file (it is also included in this repo if you are lazy):
+   ```bash
+   pyinstaller --onefile --windowed --name "QClockTwo" qclocktwo.py
+   ```
+4. Edit the generated `QClockTwo.spec` file to include UPX compression:
+   ```python
+   a = Analysis(
+    ['qclocktwo.py'],
+    pathex=[],
+    binaries=[],
+    datas=[],
+    hiddenimports=['pytz', 'tzlocal'],
+    hookspath=[],
+    hooksconfig={},
+    runtime_hooks=[],
+    excludes=['numpy', 'pillow', 'geopy', 'timezonefinder', 'ttkwidgets', 'cffi', 'pycparser', 'geographiclib', 'h3'],
+    noarchive=False
+)
+a.datas += [
+    ('tcl8.6', '/System/Library/Frameworks/Tcl.framework/Versions/8.6/Resources/tcl8.6', 'DATA'),
+    ('tk8.6', '/System/Library/Frameworks/Tk.framework/Versions/8.6/Resources/tk8.6', 'DATA'),
+]
+a.datas = [(d[0], d[1], d[2]) for d in a.datas if not ('tcl8.6' in d[0] and ('demos' in d[0] or 'msgs' in d[0] or 'encoding' in d[0]))]
+a.datas = [(d[0], d[1], d[2]) for d in a.datas if not ('tk8.6' in d[0] and ('images' in d[0] or 'demos' in d[0]))]
+pyz = PYZ(a.pure)
+exe = EXE(
+    pyz,
+    a.scripts,
+    a.binaries,
+    a.zipfiles,
+    a.datas,
+    [],
+    name='QClockTwo',
+    debug=False,
+    bootloader_ignore_signals=False,
+    strip=False,
+    upx=True,
+    upx_exclude=['libtcl*.dylib', 'libtk*.dylib'],
+    runtime_tmpdir=None,
+    console=False,
+    target_arch=None,
+    codesign_identity=None,
+    entitlements_file=None
+)
+app = BUNDLE(
+    exe,
+    name='QClockTwo.app',
+    icon=None,
+    bundle_identifier=None
+)
+   ```
+
+5. Build the app:
    ```bash
    sudo pyinstaller --onefile --windowed --name "QClockTwo" qclocktwo.py
    ```
-3. The executable will be created in the `dist` directory. You can move it to your Applications folder or wherever you prefer.
+6. The executable will be created in the `dist` directory. You can move it to your Applications folder or wherever you prefer.
 
 ## Dependencies
 The app relies on the following Python packages, listed in requirements.txt:
 
 ```bash
 tk==0.1.0
-geopy==2.4.1
-ttkwidgets==0.13.0
 tzlocal==5.2
-timezonefinder==6.5.2
+pytz==2024.1
+pyinstaller==6.13.0
 ```
 
 Install them with:
