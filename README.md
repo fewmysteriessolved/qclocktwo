@@ -12,7 +12,8 @@ QClockTwo is a sleek, desktop word clock application built with Python and Tkint
 
 ## Screenshots
 
-*(Add screenshots of the app in action here, e.g., the clock display and settings window. You can upload images to the repo and link them.)*
+![User Interface](screenshots/UI.jpg)
+
 
 ## Installation
 
