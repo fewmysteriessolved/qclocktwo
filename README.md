@@ -2,6 +2,9 @@
 
 QClockTwo is a sleek, desktop word clock application built with Python and Tkinter. It displays the time in a unique, text-based format using a grid of letters, where specific words are highlighted to indicate the current time (e.g., "IT IS HALF PAST THREE"). The app supports dynamic timezone updates based on city input, features a draggable window, and integrates seamlessly with the macOS menu bar, including a custom About dialog.
 
+
+> This app has nothing to do with the original QClock app, which was a Qt-based word clock. This is a completely new implementation using Python and Tkinter.
+
 ## Features
 
 - **Word Clock Display**: Shows time in a 11x11 letter grid, highlighting words like "QUARTER PAST" or "TEN TO" to represent the current time.
