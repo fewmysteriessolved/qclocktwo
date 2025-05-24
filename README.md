@@ -52,7 +52,8 @@ To create a standalone .app with optimized file size (~15MB), use PyInstaller wi
    ```
 2. Install PyInstaller in the virtual environment if you haven't already:
    ```bash
-   source qclocktwo_env/bin/activate
+   python3 -m venv venv # Create a virtual environment
+   source venv/bin/activate # Activate the virtual environment
    pip install pyinstaller
    ```
 3. Generate a `.spec` file (it is also included in this repo if you are lazy):
