@@ -109,7 +109,7 @@ To create a standalone .app with optimized file size (~15MB), use PyInstaller wi
 
 5. Build the app:
    ```bash
-   sudo pyinstaller --onefile --windowed --name "QClockTwo" qclocktwo.py
+   pyinstaller --onefile --windowed --name "QClockTwo" qclocktwo.py
    ```
 6. The executable will be created in the `dist` directory. You can move it to your Applications folder or wherever you prefer.
 
