@@ -62,8 +62,8 @@ def update_highlight_grid(hour, minute, is_pm):
             HIGHLIGHT_GRID[i[0]][j] = 1
     
     # AM/PM
-    HIGHLIGHT_GRID[10][5 if is_pm else 9] = 1
-    HIGHLIGHT_GRID[10][6 if is_pm else 10] = 1
+    HIGHLIGHT_GRID[10][4 if is_pm else 9] = 1
+    HIGHLIGHT_GRID[10][5 if is_pm else 10] = 1
 
 class WordClockApp(tk.Tk):
     def __init__(self):
@@ -105,10 +105,9 @@ class WordClockApp(tk.Tk):
     def show_about(self):
         win = tk.Toplevel(self)
         win.title("About QClockTwo")
-        win.geometry("300x200")
+        win.geometry("300x250")
         win.configure(bg="black")
-        tk.Label(win, text="QClockTwo\nVersion 1.0\nWord Clock\n© 2025", font=("Arial", 12), fg="white", bg="black", justify="center").pack(pady=20)
-        tk.Button(win, text="OK", command=win.destroy).pack(pady=10)
+        tk.Label(win, text="Never gonna give you up\nNever gonna let you down\nNever gonna run around and desert you\nNever gonna make you cry\nNever gonna say goodbye\nNever gonna tell a lie and hurt you", font=("Arial", 15), fg="white", bg="black", justify="center").pack(pady=20)
     
     def show_settings(self):
         win = tk.Toplevel(self)
