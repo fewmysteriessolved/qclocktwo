@@ -40,7 +40,7 @@ QClockTwo is a sleek, desktop word clock application built with Python and Tkint
 
 ## Build a Standalone macOS App
 
-o create a standalone executable for macOS, use PyInstaller:
+Create a standalone executable for macOS, use PyInstaller:
 
 1. Install PyInstaller if you haven't already:
    ```bash
