@@ -1,0 +1,59 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+*.egg-info/
+.pytest_cache/
+
+# Distribution / packaging
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+build/
+develop-eggs/
+dist/
+eggs/
+.installed.cfg
+*.egg
+parts/
+sdist/
+var/
+*.mo
+*.pot
+*.log
+*.sqlite3
+*.db
+
+# Editors
+.idea/                  # IntelliJ IDEA
+.vscode/                # VS Code
+*.sublime-project
+*.sublime-workspace
+.DS_Store               # macOS files
+
+# OS generated files
+.DS_Store
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# My stuff
+*.log
+*.bak
+*.tmp
+*.swp
+*.swo
+*.orig
+*.py~
+*.pyc
+.coverage
+.tox/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.nox/
+.venv/
