@@ -5,8 +5,7 @@ QClockTwo is a sleek, desktop word clock application built with Python and Tkint
 ## Features
 
 - **Word Clock Display**: Shows time in a 11x11 letter grid, highlighting words like "QUARTER PAST" or "TEN TO" to represent the current time.
-- **Timezone Support**: Automatically detects the system timezone or allows users to set a custom timezone by entering a city name with autocomplete functionality.
-- **Custom macOS Menu**: Includes a tailored application menu with a custom "About QClockTwo" dialog and a Settings option.
+- **Timezone Support**: Automatically detects the system timezone or allows users to set a custom timezone by entering a city name.
 - **Draggable Window**: Frameless window that can be moved by clicking and dragging anywhere on the app.
 - **Responsive Updates**: Updates the time display every 5 minutes to reflect the current time in the selected timezone.
 
