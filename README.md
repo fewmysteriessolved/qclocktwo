@@ -21,7 +21,7 @@ This clock in the style of a QClockTwo is a sleek, desktop word clock applicatio
 
 ### Prerequisites
 
-- Python 3.12 or higher (I tried with 3.9 and it did not work, becuase Tkinter is buggy there))
+- Python 3.12 or higher (I tried with 3.9 and it did not work, because Tkinter is buggy there)
 - macOS (for full menu integration; other platforms may work but are untested)
 - Required Python packages (see [Dependencies](#dependencies))
 
@@ -43,7 +43,7 @@ This clock in the style of a QClockTwo is a sleek, desktop word clock applicatio
 
 ## Build a Standalone macOS App
 
-To create a standalone .app with optimized file size (~30-50MB), use PyInstaller with UPX:
+To create a standalone .app with optimized file size (~15MB), use PyInstaller with UPX:
 
 1. Install UPX:
 
