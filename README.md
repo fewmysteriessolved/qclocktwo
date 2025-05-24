@@ -72,8 +72,7 @@ To create a standalone .app with optimized file size (~15MB), use PyInstaller wi
     hooksconfig={},
     runtime_hooks=[],
     excludes=['numpy', 'pillow', 'geopy', 'timezonefinder', 'ttkwidgets', 'cffi', 'pycparser', 'geographiclib', 'h3'],
-    noarchive=False
-)
+    noarchive=False)
 a.datas += [
     ('tcl8.6', '/System/Library/Frameworks/Tcl.framework/Versions/8.6/Resources/tcl8.6', 'DATA'),
     ('tk8.6', '/System/Library/Frameworks/Tk.framework/Versions/8.6/Resources/tk8.6', 'DATA'),
