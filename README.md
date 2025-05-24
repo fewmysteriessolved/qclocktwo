@@ -18,7 +18,7 @@ QClockTwo is a sleek, desktop word clock application built with Python and Tkint
 
 ### Prerequisites
 
-- Python 3.8 or higher
+- Python 3.12 or higher (I tried with 3.9 and it did not work, becuase Tkinter is buggy there))
 - macOS (for full menu integration; other platforms may work but are untested)
 - Required Python packages (see [Dependencies](#dependencies))
 
