@@ -14,7 +14,8 @@ This clock in the style of a QClockTwo is a sleek, desktop word clock applicatio
 
 ## Screenshots
 
-![User Interface](screenshots/UI.jpg) ![User Interface - Invisible](screenshots/UI_invisible.jpg)
+![User Interface](screenshots/UI.jpg)
+![User Interface - Invisible](screenshots/UI_invisible.jpg)
 
 
 ## Installation
@@ -134,7 +135,6 @@ pip3.12 install tk geopy ttkwidgets tzlocal timezonefinder
 
 ## Usage
 - Launch the App: Run `python3.12 qclocktwo.py` or the built `QClockTwo.app`.
-The
 - View Time: The 11x11 letter grid displays the current time (e.g., "IT IS TWENTY FIVE PAST SEVEN"). Words are highlighted in white, with inactive letters in dark gray.
 - Change Timezone: Click the "Settings" menu to enter a city name for timezone detection. The app will update the time display accordingly.
 - Drag the Window: Click and drag anywhere on the app to move it around your desktop.
