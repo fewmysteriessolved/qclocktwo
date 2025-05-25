@@ -14,8 +14,7 @@ This clock in the style of a QClockTwo is a sleek, desktop word clock applicatio
 
 ## Screenshots
 
-![User Interface](screenshots/UI.jpg)
-![User Interface - Invisible](screenshots/UI_invisible.jpg)
+![User Interface](screenshots/UI.jpg) ![User Interface - Invisible](screenshots/UI_invisible.jpg)
 
 
 ## Installation
