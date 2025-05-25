@@ -138,6 +138,7 @@ The
 - View Time: The 11x11 letter grid displays the current time (e.g., "IT IS TWENTY FIVE PAST SEVEN"). Words are highlighted in white, with inactive letters in dark gray.
 - Change Timezone: Click the "Settings" menu to enter a city name for timezone detection. The app will update the time display accordingly.
 - Drag the Window: Click and drag anywhere on the app to move it around your desktop.
+- Context menu: Right-click on the app window to access the context menu, which includes options like `timezone` and `visibility`.
 
 ## Configuration
 - Timezone: Defaults to the system timezone (detected via tzlocal). Set a custom timezone via the Settings menu.
