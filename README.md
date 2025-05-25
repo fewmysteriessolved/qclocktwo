@@ -14,10 +14,10 @@ This clock in the style of a QClockTwo is a sleek, desktop word clock applicatio
 
 ## Screenshots
 
-## Screenshots
-
-<img src="screenshots/UI.jpg" alt="User Interface" width="300">
-<img src="screenshots/UI_invisible.jpg" alt="User Interface - Invisible" width="300">
+<div style="display: flex; gap: 10px;">
+  <img src="screenshots/UI.jpg" alt="visiblity = yes" width="300">
+  <img src="screenshots/UI_invisible.jpg" alt="visiblity = no" width="300">
+</div>
 
 
 ## Installation
