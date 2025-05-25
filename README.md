@@ -129,10 +129,11 @@ pyinstaller==6.13.0
 Install them with:
 
 ```bash
-(choose one of the following based on your Python version)
-pip install tk geopy ttkwidgets tzlocal timezonefinder
-pip3 install tk geopy ttkwidgets tzlocal timezonefinder
-pip3.12 install tk geopy ttkwidgets tzlocal timezonefinder
+# choose one of the following based on your Python version
+
+pip install tk tzlocal pytz tzlocal pyinstaller
+pip3 install tk tzlocal pytz tzlocal pyinstaller
+pip3.12 tk tzlocal pytz tzlocal pyinstaller
 ```
 
 ## Usage
